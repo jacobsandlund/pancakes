@@ -162,17 +162,17 @@ var dvorakKeypressMap = {
 var keypressMap;
 
 Input.dvorak = function () {
-    localStorage.setItem('CompA_keyboard_mode', 'dvorak');
+    localStorage.setItem('Pancakes_keyboard_mode', 'dvorak');
     Input.setup();
 };
 
 Input.qwerty = function () {
-    localStorage.setItem('CompA_keyboard_mode', 'qwerty');
+    localStorage.setItem('Pancakes_keyboard_mode', 'qwerty');
     Input.setup();
 };
 
 Input.setup = function () {
-    if (localStorage.getItem('CompA_keyboard_mode') === 'dvorak') {
+    if (localStorage.getItem('Pancakes_keyboard_mode') === 'dvorak') {
         keypressMap = dvorakKeypressMap;
     } else {
         keypressMap = qwertyKeypressMap;
