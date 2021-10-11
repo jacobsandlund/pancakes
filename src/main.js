@@ -109,4 +109,8 @@ Draw.setup();
 Main.update();
 Player.step();
 
+document.getElementById('video-close').addEventListener('click', function () {
+  document.getElementById('video').style.display = 'none';
+});
+
 })();

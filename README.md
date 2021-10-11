@@ -5,5 +5,5 @@ Programming editor and environment.
 Setup:
 
 ```
-python -m SimpleHTTPServer
+python -m http.server
 ```
